@@ -112,7 +112,7 @@ function winOrLose () {
 
 function newRandNum() {
 	var newRando = Math.floor(Math.random() * (120 - 19)) + 19;
-	console.log("new number shold be: " + newRando);
+	console.log("new number should be: " + newRando);
 	$('#comp-result').html('<h1>' + newRando + '</h1>');
 	tally = 0;
 	// compNum = 50;
