@@ -93,8 +93,8 @@ function winOrLose () {
 				alert("You matched! You win!");
 				$('#win-count').html(wins);
 				$('#win-state').html(" You Won!");
-
-				
+				newRandNum();
+			
 
 			} 
 			else if (tally >= compNum) {
@@ -104,16 +104,31 @@ function winOrLose () {
 				$('#lose-count').html(losses);
 				$('#win-state').html(" You lost!");
 
-
+				newRandNum();
+				// $('#comp-result').html('<h1>' + newRando + '</h1>');
 		}
 
 }
 
 function newRandNum() {
 	var newRando = Math.floor(Math.random() * (120 - 19)) + 19;
-	compNum = newRando
-	return
+	console.log("new number shold be: " + newRando);
+	$('#comp-result').html('<h1>' + newRando + '</h1>');
+	tally = 0;
+	// compNum = 50;
+	
 }
+
+// function resetGame() {
+// if (winOrLose();){
+// 	 newRandom();
+	 	
+// }
+
+// }
+
+
+
 
 
 
